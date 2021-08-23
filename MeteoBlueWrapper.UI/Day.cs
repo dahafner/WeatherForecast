@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MeteoBlueWrapper.UI
 {
@@ -20,6 +16,10 @@ namespace MeteoBlueWrapper.UI
         public DateTime Date { get; set; }
 
         public int DaysUntil { get; set; }
+        
+        public string City { get; set; }
+
+        public string DateText { get; set; }
         
     }
 }

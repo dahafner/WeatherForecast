@@ -45,34 +45,34 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay4 = new System.Windows.Forms.PictureBox();
             this.PbxDay3 = new System.Windows.Forms.PictureBox();
             this.PbxDay2 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
+            this.LblCity1 = new System.Windows.Forms.Label();
+            this.LblCity2 = new System.Windows.Forms.Label();
+            this.LblCity3 = new System.Windows.Forms.Label();
+            this.LblCity4 = new System.Windows.Forms.Label();
+            this.LblCity5 = new System.Windows.Forms.Label();
+            this.LblCity6 = new System.Windows.Forms.Label();
+            this.LblCity7 = new System.Windows.Forms.Label();
+            this.LblCity8 = new System.Windows.Forms.Label();
+            this.LblCity9 = new System.Windows.Forms.Label();
+            this.LblCity11 = new System.Windows.Forms.Label();
+            this.LblCity10 = new System.Windows.Forms.Label();
+            this.LblCity12 = new System.Windows.Forms.Label();
+            this.LblCity13 = new System.Windows.Forms.Label();
+            this.LblCity14 = new System.Windows.Forms.Label();
+            this.LblDate1 = new System.Windows.Forms.Label();
+            this.LblDate2 = new System.Windows.Forms.Label();
+            this.LblDate3 = new System.Windows.Forms.Label();
+            this.LblDate4 = new System.Windows.Forms.Label();
+            this.LblDate5 = new System.Windows.Forms.Label();
+            this.LblDate6 = new System.Windows.Forms.Label();
+            this.LblDate7 = new System.Windows.Forms.Label();
+            this.LblDate8 = new System.Windows.Forms.Label();
+            this.LblDate9 = new System.Windows.Forms.Label();
+            this.LblDate10 = new System.Windows.Forms.Label();
+            this.LblDate11 = new System.Windows.Forms.Label();
+            this.LblDate12 = new System.Windows.Forms.Label();
+            this.LblDate13 = new System.Windows.Forms.Label();
+            this.LblDate14 = new System.Windows.Forms.Label();
             this.PbxDay1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -157,34 +157,34 @@ namespace MeteoBlueWrapper.UI
             this.tableLayoutPanel1.Controls.Add(this.PbxDay4, 3, 2);
             this.tableLayoutPanel1.Controls.Add(this.PbxDay3, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.PbxDay2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 5, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 6, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 7, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label9, 8, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 10, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 9, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label12, 11, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label13, 12, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label14, 13, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label15, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label16, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label17, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label18, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label19, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label20, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label21, 6, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label22, 7, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label23, 8, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label24, 9, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label25, 10, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label26, 11, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label27, 12, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label28, 13, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity2, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity3, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity4, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity5, 4, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity6, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity7, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity8, 7, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity9, 8, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity11, 10, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity10, 9, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity12, 11, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity13, 12, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblCity14, 13, 0);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate3, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate4, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate5, 4, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate6, 5, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate7, 6, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate8, 7, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate9, 8, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate10, 9, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate11, 10, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate12, 11, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate13, 12, 1);
+            this.tableLayoutPanel1.Controls.Add(this.LblDate14, 13, 1);
             this.tableLayoutPanel1.Controls.Add(this.PbxDay1, 0, 2);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -340,327 +340,327 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay2.TabIndex = 29;
             this.PbxDay2.TabStop = false;
             // 
-            // label1
+            // LblCity1
             // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(2, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 30);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Davos";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity1.Location = new System.Drawing.Point(2, 0);
+            this.LblCity1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity1.Name = "LblCity1";
+            this.LblCity1.Size = new System.Drawing.Size(68, 30);
+            this.LblCity1.TabIndex = 0;
+            this.LblCity1.Text = "Davos";
+            this.LblCity1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // LblCity2
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(74, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 30);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "St. Moritz";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity2.Location = new System.Drawing.Point(74, 0);
+            this.LblCity2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity2.Name = "LblCity2";
+            this.LblCity2.Size = new System.Drawing.Size(68, 30);
+            this.LblCity2.TabIndex = 1;
+            this.LblCity2.Text = "St. Moritz";
+            this.LblCity2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // LblCity3
             // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(146, 0);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(68, 30);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tenero";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity3.Location = new System.Drawing.Point(146, 0);
+            this.LblCity3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity3.Name = "LblCity3";
+            this.LblCity3.Size = new System.Drawing.Size(68, 30);
+            this.LblCity3.TabIndex = 2;
+            this.LblCity3.Text = "Tenero";
+            this.LblCity3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // LblCity4
             // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(218, 0);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(68, 30);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Tenero";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity4.Location = new System.Drawing.Point(218, 0);
+            this.LblCity4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity4.Name = "LblCity4";
+            this.LblCity4.Size = new System.Drawing.Size(68, 30);
+            this.LblCity4.TabIndex = 3;
+            this.LblCity4.Text = "Tenero";
+            this.LblCity4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // LblCity5
             // 
-            this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(290, 0);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 30);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Brig";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity5.Location = new System.Drawing.Point(290, 0);
+            this.LblCity5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity5.Name = "LblCity5";
+            this.LblCity5.Size = new System.Drawing.Size(68, 30);
+            this.LblCity5.TabIndex = 4;
+            this.LblCity5.Text = "Brig";
+            this.LblCity5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label6
+            // LblCity6
             // 
-            this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(362, 0);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(68, 30);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Zermatt";
-            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity6.Location = new System.Drawing.Point(362, 0);
+            this.LblCity6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity6.Name = "LblCity6";
+            this.LblCity6.Size = new System.Drawing.Size(68, 30);
+            this.LblCity6.TabIndex = 5;
+            this.LblCity6.Text = "Zermatt";
+            this.LblCity6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label7
+            // LblCity7
             // 
-            this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(434, 0);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(68, 30);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Morges";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity7.Location = new System.Drawing.Point(434, 0);
+            this.LblCity7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity7.Name = "LblCity7";
+            this.LblCity7.Size = new System.Drawing.Size(68, 30);
+            this.LblCity7.TabIndex = 6;
+            this.LblCity7.Text = "Morges";
+            this.LblCity7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label8
+            // LblCity8
             // 
-            this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(506, 0);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(68, 30);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Neuchatel";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity8.Location = new System.Drawing.Point(506, 0);
+            this.LblCity8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity8.Name = "LblCity8";
+            this.LblCity8.Size = new System.Drawing.Size(68, 30);
+            this.LblCity8.TabIndex = 7;
+            this.LblCity8.Text = "Neuchatel";
+            this.LblCity8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label9
+            // LblCity9
             // 
-            this.label9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(578, 0);
-            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(68, 30);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Sugiez";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity9.Location = new System.Drawing.Point(578, 0);
+            this.LblCity9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity9.Name = "LblCity9";
+            this.LblCity9.Size = new System.Drawing.Size(68, 30);
+            this.LblCity9.TabIndex = 8;
+            this.LblCity9.Text = "Sugiez";
+            this.LblCity9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label10
+            // LblCity11
             // 
-            this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(722, 0);
-            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 30);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Bern";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity11.Location = new System.Drawing.Point(722, 0);
+            this.LblCity11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity11.Name = "LblCity11";
+            this.LblCity11.Size = new System.Drawing.Size(68, 30);
+            this.LblCity11.TabIndex = 9;
+            this.LblCity11.Text = "Bern";
+            this.LblCity11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label11
+            // LblCity10
             // 
-            this.label11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(650, 0);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(68, 30);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "Sugiez";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity10.Location = new System.Drawing.Point(650, 0);
+            this.LblCity10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity10.Name = "LblCity10";
+            this.LblCity10.Size = new System.Drawing.Size(68, 30);
+            this.LblCity10.TabIndex = 10;
+            this.LblCity10.Text = "Sugiez";
+            this.LblCity10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label12
+            // LblCity12
             // 
-            this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(794, 0);
-            this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 30);
-            this.label12.TabIndex = 11;
-            this.label12.Text = "Luzern";
-            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity12.Location = new System.Drawing.Point(794, 0);
+            this.LblCity12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity12.Name = "LblCity12";
+            this.LblCity12.Size = new System.Drawing.Size(68, 30);
+            this.LblCity12.TabIndex = 11;
+            this.LblCity12.Text = "Luzern";
+            this.LblCity12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label13
+            // LblCity13
             // 
-            this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(866, 0);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(68, 30);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "Arbon";
-            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity13.Location = new System.Drawing.Point(866, 0);
+            this.LblCity13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity13.Name = "LblCity13";
+            this.LblCity13.Size = new System.Drawing.Size(68, 30);
+            this.LblCity13.TabIndex = 12;
+            this.LblCity13.Text = "Arbon";
+            this.LblCity13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label14
+            // LblCity14
             // 
-            this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(938, 0);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 30);
-            this.label14.TabIndex = 13;
-            this.label14.Text = "Arbon";
-            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblCity14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblCity14.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.LblCity14.Location = new System.Drawing.Point(938, 0);
+            this.LblCity14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblCity14.Name = "LblCity14";
+            this.LblCity14.Size = new System.Drawing.Size(69, 30);
+            this.LblCity14.TabIndex = 13;
+            this.LblCity14.Text = "Arbon";
+            this.LblCity14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label15
+            // LblDate1
             // 
-            this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label15.Location = new System.Drawing.Point(2, 30);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(68, 30);
-            this.label15.TabIndex = 14;
-            this.label15.Text = "Sa 04.09.";
-            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate1.Location = new System.Drawing.Point(2, 30);
+            this.LblDate1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate1.Name = "LblDate1";
+            this.LblDate1.Size = new System.Drawing.Size(68, 30);
+            this.LblDate1.TabIndex = 14;
+            this.LblDate1.Text = "Sa 04.09.";
+            this.LblDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label16
+            // LblDate2
             // 
-            this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label16.Location = new System.Drawing.Point(74, 30);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(68, 30);
-            this.label16.TabIndex = 15;
-            this.label16.Text = "So 05.09.";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate2.Location = new System.Drawing.Point(74, 30);
+            this.LblDate2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate2.Name = "LblDate2";
+            this.LblDate2.Size = new System.Drawing.Size(68, 30);
+            this.LblDate2.TabIndex = 15;
+            this.LblDate2.Text = "So 05.09.";
+            this.LblDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label17
+            // LblDate3
             // 
-            this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label17.Location = new System.Drawing.Point(146, 30);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(68, 30);
-            this.label17.TabIndex = 16;
-            this.label17.Text = "Mo 06.09.";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate3.Location = new System.Drawing.Point(146, 30);
+            this.LblDate3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate3.Name = "LblDate3";
+            this.LblDate3.Size = new System.Drawing.Size(68, 30);
+            this.LblDate3.TabIndex = 16;
+            this.LblDate3.Text = "Mo 06.09.";
+            this.LblDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label18
+            // LblDate4
             // 
-            this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Location = new System.Drawing.Point(218, 30);
-            this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(68, 30);
-            this.label18.TabIndex = 17;
-            this.label18.Text = "Di 07.09.";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate4.Location = new System.Drawing.Point(218, 30);
+            this.LblDate4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate4.Name = "LblDate4";
+            this.LblDate4.Size = new System.Drawing.Size(68, 30);
+            this.LblDate4.TabIndex = 17;
+            this.LblDate4.Text = "Di 07.09.";
+            this.LblDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label19
+            // LblDate5
             // 
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Location = new System.Drawing.Point(290, 30);
-            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(68, 30);
-            this.label19.TabIndex = 18;
-            this.label19.Text = "Mi 08.09.";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate5.Location = new System.Drawing.Point(290, 30);
+            this.LblDate5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate5.Name = "LblDate5";
+            this.LblDate5.Size = new System.Drawing.Size(68, 30);
+            this.LblDate5.TabIndex = 18;
+            this.LblDate5.Text = "Mi 08.09.";
+            this.LblDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label20
+            // LblDate6
             // 
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Location = new System.Drawing.Point(362, 30);
-            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(68, 30);
-            this.label20.TabIndex = 19;
-            this.label20.Text = "Do 09.09.";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate6.Location = new System.Drawing.Point(362, 30);
+            this.LblDate6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate6.Name = "LblDate6";
+            this.LblDate6.Size = new System.Drawing.Size(68, 30);
+            this.LblDate6.TabIndex = 19;
+            this.LblDate6.Text = "Do 09.09.";
+            this.LblDate6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label21
+            // LblDate7
             // 
-            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Location = new System.Drawing.Point(434, 30);
-            this.label21.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(68, 30);
-            this.label21.TabIndex = 20;
-            this.label21.Text = "Fr 10.09.";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate7.Location = new System.Drawing.Point(434, 30);
+            this.LblDate7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate7.Name = "LblDate7";
+            this.LblDate7.Size = new System.Drawing.Size(68, 30);
+            this.LblDate7.TabIndex = 20;
+            this.LblDate7.Text = "Fr 10.09.";
+            this.LblDate7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label22
+            // LblDate8
             // 
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Location = new System.Drawing.Point(506, 30);
-            this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(68, 30);
-            this.label22.TabIndex = 21;
-            this.label22.Text = "Sa 11.09.";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate8.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate8.Location = new System.Drawing.Point(506, 30);
+            this.LblDate8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate8.Name = "LblDate8";
+            this.LblDate8.Size = new System.Drawing.Size(68, 30);
+            this.LblDate8.TabIndex = 21;
+            this.LblDate8.Text = "Sa 11.09.";
+            this.LblDate8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label23
+            // LblDate9
             // 
-            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Location = new System.Drawing.Point(578, 30);
-            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(68, 30);
-            this.label23.TabIndex = 22;
-            this.label23.Text = "So 12.09.";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate9.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate9.Location = new System.Drawing.Point(578, 30);
+            this.LblDate9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate9.Name = "LblDate9";
+            this.LblDate9.Size = new System.Drawing.Size(68, 30);
+            this.LblDate9.TabIndex = 22;
+            this.LblDate9.Text = "So 12.09.";
+            this.LblDate9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label24
+            // LblDate10
             // 
-            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Location = new System.Drawing.Point(650, 30);
-            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(68, 30);
-            this.label24.TabIndex = 23;
-            this.label24.Text = "Mo 13.09.";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate10.Location = new System.Drawing.Point(650, 30);
+            this.LblDate10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate10.Name = "LblDate10";
+            this.LblDate10.Size = new System.Drawing.Size(68, 30);
+            this.LblDate10.TabIndex = 23;
+            this.LblDate10.Text = "Mo 13.09.";
+            this.LblDate10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label25
+            // LblDate11
             // 
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Location = new System.Drawing.Point(722, 30);
-            this.label25.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(68, 30);
-            this.label25.TabIndex = 24;
-            this.label25.Text = "Di 14.09.";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate11.Location = new System.Drawing.Point(722, 30);
+            this.LblDate11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate11.Name = "LblDate11";
+            this.LblDate11.Size = new System.Drawing.Size(68, 30);
+            this.LblDate11.TabIndex = 24;
+            this.LblDate11.Text = "Di 14.09.";
+            this.LblDate11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label26
+            // LblDate12
             // 
-            this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label26.Location = new System.Drawing.Point(794, 30);
-            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(68, 30);
-            this.label26.TabIndex = 25;
-            this.label26.Text = "Mi 15.09.";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate12.Location = new System.Drawing.Point(794, 30);
+            this.LblDate12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate12.Name = "LblDate12";
+            this.LblDate12.Size = new System.Drawing.Size(68, 30);
+            this.LblDate12.TabIndex = 25;
+            this.LblDate12.Text = "Mi 15.09.";
+            this.LblDate12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label27
+            // LblDate13
             // 
-            this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label27.Location = new System.Drawing.Point(866, 30);
-            this.label27.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(68, 30);
-            this.label27.TabIndex = 26;
-            this.label27.Text = "Do 16.09.";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate13.Location = new System.Drawing.Point(866, 30);
+            this.LblDate13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate13.Name = "LblDate13";
+            this.LblDate13.Size = new System.Drawing.Size(68, 30);
+            this.LblDate13.TabIndex = 26;
+            this.LblDate13.Text = "Do 16.09.";
+            this.LblDate13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label28
+            // LblDate14
             // 
-            this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label28.Location = new System.Drawing.Point(938, 30);
-            this.label28.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(69, 30);
-            this.label28.TabIndex = 27;
-            this.label28.Text = "Fr 17.09.";
-            this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.LblDate14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LblDate14.Location = new System.Drawing.Point(938, 30);
+            this.LblDate14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LblDate14.Name = "LblDate14";
+            this.LblDate14.Size = new System.Drawing.Size(69, 30);
+            this.LblDate14.TabIndex = 27;
+            this.LblDate14.Text = "Fr 17.09.";
+            this.LblDate14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PbxDay1
             // 
@@ -711,34 +711,34 @@ namespace MeteoBlueWrapper.UI
 
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label LblCity1;
+        private System.Windows.Forms.Label LblCity2;
+        private System.Windows.Forms.Label LblCity3;
+        private System.Windows.Forms.Label LblCity4;
+        private System.Windows.Forms.Label LblCity5;
+        private System.Windows.Forms.Label LblCity6;
+        private System.Windows.Forms.Label LblCity7;
+        private System.Windows.Forms.Label LblCity8;
+        private System.Windows.Forms.Label LblCity9;
+        private System.Windows.Forms.Label LblCity11;
+        private System.Windows.Forms.Label LblCity10;
+        private System.Windows.Forms.Label LblCity12;
+        private System.Windows.Forms.Label LblCity13;
+        private System.Windows.Forms.Label LblCity14;
+        private System.Windows.Forms.Label LblDate1;
+        private System.Windows.Forms.Label LblDate2;
+        private System.Windows.Forms.Label LblDate3;
+        private System.Windows.Forms.Label LblDate4;
+        private System.Windows.Forms.Label LblDate5;
+        private System.Windows.Forms.Label LblDate6;
+        private System.Windows.Forms.Label LblDate7;
+        private System.Windows.Forms.Label LblDate8;
+        private System.Windows.Forms.Label LblDate9;
+        private System.Windows.Forms.Label LblDate10;
+        private System.Windows.Forms.Label LblDate11;
+        private System.Windows.Forms.Label LblDate12;
+        private System.Windows.Forms.Label LblDate13;
+        private System.Windows.Forms.Label LblDate14;
         private System.Windows.Forms.PictureBox PbxDay9;
         private System.Windows.Forms.PictureBox PbxDay8;
         private System.Windows.Forms.PictureBox PbxDay7;

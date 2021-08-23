@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 using System.Net;
+using System.Net.Cache;
 using System.Windows.Forms;
 
 namespace MeteoBlueWrapper.UI
@@ -9,7 +10,6 @@ namespace MeteoBlueWrapper.UI
     public partial class FrmMain : Form
     {
         private readonly List<Day> days = new();
-        private readonly List<PictureBox> pictureBoxes = new();
         private int debugDays = 0;
 
         public FrmMain()
@@ -22,35 +22,20 @@ namespace MeteoBlueWrapper.UI
 
         private void InitLists()
         {
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/davos_schweiz_2661039", Date = new DateTime(2021, 9, 4) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sankt-moritz_schweiz_2658813", Date = new DateTime(2021, 9, 5) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/tenero_schweiz_2658407", Date = new DateTime(2021, 9, 6) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/tenero_schweiz_2658407", Date = new DateTime(2021, 9, 7) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/brig_schweiz_2661394", Date = new DateTime(2021, 9, 8) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/zermatt_schweiz_2657928", Date = new DateTime(2021, 9, 9) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/morges_schweiz_2659587", Date = new DateTime(2021, 9, 10) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/neuenburg_schweiz_2659496", Date = new DateTime(2021, 9, 11) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sugiez_schweiz_2658458", Date = new DateTime(2021, 9, 12) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sugiez_schweiz_2658458", Date = new DateTime(2021, 9, 13) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/bern_schweiz_2661552", Date = new DateTime(2021, 9, 14) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/luzern_schweiz_2659811", Date = new DateTime(2021, 9, 15) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731", Date = new DateTime(2021, 9, 16) });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731", Date = new DateTime(2021, 9, 17) });
-
-            this.pictureBoxes.Add(this.PbxDay1);
-            this.pictureBoxes.Add(this.PbxDay2);
-            this.pictureBoxes.Add(this.PbxDay3);
-            this.pictureBoxes.Add(this.PbxDay4);
-            this.pictureBoxes.Add(this.PbxDay5);
-            this.pictureBoxes.Add(this.PbxDay6);
-            this.pictureBoxes.Add(this.PbxDay7);
-            this.pictureBoxes.Add(this.PbxDay8);
-            this.pictureBoxes.Add(this.PbxDay9);
-            this.pictureBoxes.Add(this.PbxDay10);
-            this.pictureBoxes.Add(this.PbxDay11);
-            this.pictureBoxes.Add(this.PbxDay12);
-            this.pictureBoxes.Add(this.PbxDay13);
-            this.pictureBoxes.Add(this.PbxDay14);
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/davos_schweiz_2661039", Date = new DateTime(2021, 9, 4), City = "Davos", DateText = "Sa 04.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sankt-moritz_schweiz_2658813", Date = new DateTime(2021, 9, 5), City = "St. Moritz", DateText = "So 05.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/tenero_schweiz_2658407", Date = new DateTime(2021, 9, 6), City = "Tenero", DateText = "Mo 06.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/tenero_schweiz_2658407", Date = new DateTime(2021, 9, 7), City = "Tenero", DateText = "Di 07.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/brig_schweiz_2661394", Date = new DateTime(2021, 9, 8), City = "Brig", DateText = "Mi 08.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/zermatt_schweiz_2657928", Date = new DateTime(2021, 9, 9), City = "Zermatt", DateText = "Do 09.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/morges_schweiz_2659587", Date = new DateTime(2021, 9, 10), City = "Morges", DateText = "Fr 10.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/neuenburg_schweiz_2659496", Date = new DateTime(2021, 9, 11), City = "Neuchatel", DateText = "Sa 11.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sugiez_schweiz_2658458", Date = new DateTime(2021, 9, 12), City = "Sugiez", DateText = "So 12.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sugiez_schweiz_2658458", Date = new DateTime(2021, 9, 13), City = "Sugiez", DateText = "Mo 13.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/bern_schweiz_2661552", Date = new DateTime(2021, 9, 14), City = "Bern", DateText = "Di 14.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/luzern_schweiz_2659811", Date = new DateTime(2021, 9, 15), City = "Luzern", DateText = "Mi 15.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731", Date = new DateTime(2021, 9, 16), City = "Arbon", DateText = "Do 16.09." });
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731", Date = new DateTime(2021, 9, 17), City = "Arbon", DateText = "Fr 17.09." });
         }
 
         private async void GetImages()
@@ -58,10 +43,18 @@ namespace MeteoBlueWrapper.UI
             using (var client = new WebClient())
             {
                 client.Headers.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0");
+                client.Headers.Add("Cache-Control", "no-cache");
+                client.CachePolicy = new RequestCachePolicy(RequestCacheLevel.NoCacheNoStore);
 
                 for (var i = 0; i < this.days.Count; i++)
                 {
                     var day = this.days[i];
+
+                    // Show city and date
+                    var city = this.tableLayoutPanel1.Controls.Find($"LblCity{i + 1}", false);
+                    ((Label)city[0]).Text = day.City;
+                    var date = this.tableLayoutPanel1.Controls.Find($"LblDate{i + 1}", false);
+                    ((Label)date[0]).Text = day.DateText;
 
                     // Calculate days until
                     var daysUntil = day.Date - DateTime.Now;
@@ -94,7 +87,8 @@ namespace MeteoBlueWrapper.UI
                     day.CroppedImage = bmpImage.Clone(new Rectangle(left, 90, widthPart, day.Image.Height - 90), bmpImage.PixelFormat);
 
                     // Show image
-                    this.pictureBoxes[i].Image = day.CroppedImage;
+                    var pbx = this.tableLayoutPanel1.Controls.Find($"PbxDay{i + 1}", false);
+                    ((PictureBox)pbx[0]).Image = day.CroppedImage;
                 }
             }
         }
