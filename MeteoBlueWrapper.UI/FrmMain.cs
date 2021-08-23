@@ -10,7 +10,7 @@ namespace MeteoBlueWrapper.UI
     public partial class FrmMain : Form
     {
         private readonly List<Day> days = new();
-        private int debugDays = 0;
+        private readonly int debugDays = 0;
 
         public FrmMain()
         {
@@ -50,23 +50,25 @@ namespace MeteoBlueWrapper.UI
                 {
                     var day = this.days[i];
 
-                    // Show city and date
+                    // -- Show city and date --
                     var city = this.tableLayoutPanel1.Controls.Find($"LblCity{i + 1}", false);
                     ((Label)city[0]).Text = day.City;
                     var date = this.tableLayoutPanel1.Controls.Find($"LblDate{i + 1}", false);
                     ((Label)date[0]).Text = day.DateText;
 
-                    // Calculate days until
+                    // -- Calculate days until --
+                    // Add debug days to pretend we are in the future
                     var daysUntil = day.Date - DateTime.Now;
                     day.DaysUntil = (int)Math.Ceiling(daysUntil.TotalDays) - debugDays;
 
-                    // Skip if not in range
+                    // -- Skip if not in range --
                     if (day.DaysUntil > 13 || day.DaysUntil < 0)
                     {
                         continue;
                     }
 
-                    // Scrape image url
+                    // -- Scrape image url --
+                    // Work your way through to the url from the download button
                     var content = await client.DownloadStringTaskAsync(day.Url);
                     content = content.Replace("\n", "");
                     var split = content.Split(new string[] { "id=\"chart_download\" rel=\"nofollow\"", "target=\"_blank\"" }, StringSplitOptions.RemoveEmptyEntries);
@@ -75,18 +77,20 @@ namespace MeteoBlueWrapper.UI
                     url = url.Substring(8, url.Length - 9);
                     day.ImageUrl = "https://" + url;
 
-                    // Download image
+                    // -- Download image --
                     var filename = $"image{i}.png";
                     await client.DownloadFileTaskAsync(new Uri(day.ImageUrl), filename);
                     day.Image = Image.FromFile(filename);
 
-                    // Crop image
+                    // -- Crop image --
+                    // For some reasons we don't need the first 25px from the left
+                    // Cut the image in 14 columns and calculate the new left from DaysUntil
                     var widthPart = Convert.ToInt32((day.Image.Width - 25) / 14);
                     var left = 25 + (widthPart * day.DaysUntil);
                     var bmpImage = new Bitmap(day.Image);
                     day.CroppedImage = bmpImage.Clone(new Rectangle(left, 90, widthPart, day.Image.Height - 90), bmpImage.PixelFormat);
 
-                    // Show image
+                    // -- Show image --
                     var pbx = this.tableLayoutPanel1.Controls.Find($"PbxDay{i + 1}", false);
                     ((PictureBox)pbx[0]).Image = day.CroppedImage;
                 }
