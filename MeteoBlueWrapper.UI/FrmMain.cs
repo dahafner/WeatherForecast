@@ -23,6 +23,7 @@ namespace MeteoBlueWrapper.UI
 
         private void InitLists()
         {
+            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731", Date = new DateTime(2021, 9, 3), City = "Arbon", DateText = "Fr 03.09." });
             this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/davos_schweiz_2661039", Date = new DateTime(2021, 9, 4), City = "Davos", DateText = "Sa 04.09." });
             this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sankt-moritz_schweiz_2658813", Date = new DateTime(2021, 9, 5), City = "St. Moritz", DateText = "So 05.09." });
             this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/tenero_schweiz_2658407", Date = new DateTime(2021, 9, 6), City = "Tenero", DateText = "Mo 06.09." });
