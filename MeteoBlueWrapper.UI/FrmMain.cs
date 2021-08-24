@@ -11,7 +11,7 @@ namespace MeteoBlueWrapper.UI
     public partial class FrmMain : Form
     {
         private readonly List<Day> days = new();
-        private readonly int debugDays = 0;
+        private int debugDays = 0;
 
         public FrmMain()
         {
@@ -54,7 +54,7 @@ namespace MeteoBlueWrapper.UI
 
                     // -- Show city and date --
                     var cityControl = this.tableLayoutPanel1.Controls.Find($"LblCity{i + 1}", false);
-                    var lblCity = ((Label)cityControl[0]);
+                    var lblCity = (Label)cityControl[0];
                     lblCity.Text = day.City;
                     lblCity.Tag = day.Url;
                     var date = this.tableLayoutPanel1.Controls.Find($"LblDate{i + 1}", false);
@@ -65,11 +65,21 @@ namespace MeteoBlueWrapper.UI
                     var daysUntil = day.Date - DateTime.Now;
                     day.DaysUntil = (int)Math.Ceiling(daysUntil.TotalDays) - debugDays;
 
+                    // -- Release image if present --
+                    var pbxControl = this.tableLayoutPanel1.Controls.Find($"PbxDay{i + 1}", false);
+                    var pbx = (PictureBox)pbxControl[0];
+                    if (pbx.Image != null)
+                    {
+                        pbx.Image = null;
+                        day.Image = null;
+                        day.CroppedImage = null;
+                    }
+
                     // -- Skip if not in range --
                     if (day.DaysUntil > 13 || day.DaysUntil < 0)
                     {
                         continue;
-                    }
+                    }                    
 
                     // -- Scrape image url --
                     // Work your way through to the url from the download button
@@ -82,9 +92,13 @@ namespace MeteoBlueWrapper.UI
                     day.ImageUrl = "https://" + url;
 
                     // -- Download image --
+                    // Loading the image from disk with the using statement prevents any file lock
                     var filename = $"image{i}.png";
                     await client.DownloadFileTaskAsync(new Uri(day.ImageUrl), filename);
-                    day.Image = Image.FromFile(filename);
+                    using (var bmpTemp = new Bitmap(filename))
+                    {
+                        day.Image = new Bitmap(bmpTemp);
+                    }
 
                     // -- Crop image --
                     // For some reasons we don't need the first 25px from the left
@@ -94,9 +108,8 @@ namespace MeteoBlueWrapper.UI
                     var bmpImage = new Bitmap(day.Image);
                     day.CroppedImage = bmpImage.Clone(new Rectangle(left, 90, widthPart, day.Image.Height - 90), bmpImage.PixelFormat);
 
-                    // -- Show image --
-                    var pbx = this.tableLayoutPanel1.Controls.Find($"PbxDay{i + 1}", false);
-                    ((PictureBox)pbx[0]).Image = day.CroppedImage;
+                    // -- Show image --                    
+                    pbx.Image = day.CroppedImage;
                 }
             }
         }
@@ -108,6 +121,12 @@ namespace MeteoBlueWrapper.UI
             {
                 Process.Start("explorer.exe", lblCity.Tag.ToString());
             }
+        }
+
+        private void BtnApplyDebugDays_Click(object sender, EventArgs e)
+        {
+            this.debugDays = (int)this.NudDebugDays.Value;
+            this.GetImages();
         }
     }
 }
