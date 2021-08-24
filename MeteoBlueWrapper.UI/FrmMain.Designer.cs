@@ -29,7 +29,10 @@ namespace MeteoBlueWrapper.UI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.BtnApplyDebugDays = new System.Windows.Forms.Button();
+            this.NudDebugDays = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.PbxDay1 = new System.Windows.Forms.PictureBox();
@@ -77,12 +80,11 @@ namespace MeteoBlueWrapper.UI
             this.LblDate15 = new System.Windows.Forms.Label();
             this.LblDate1 = new System.Windows.Forms.Label();
             this.LblCity1 = new System.Windows.Forms.Label();
-            this.NudDebugDays = new System.Windows.Forms.NumericUpDown();
-            this.BtnApplyDebugDays = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.NudDebugDays)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay15)).BeginInit();
@@ -99,7 +101,6 @@ namespace MeteoBlueWrapper.UI
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NudDebugDays)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -125,6 +126,23 @@ namespace MeteoBlueWrapper.UI
             this.splitContainer1.SplitterDistance = 54;
             this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // BtnApplyDebugDays
+            // 
+            this.BtnApplyDebugDays.Location = new System.Drawing.Point(963, 12);
+            this.BtnApplyDebugDays.Name = "BtnApplyDebugDays";
+            this.BtnApplyDebugDays.Size = new System.Drawing.Size(34, 23);
+            this.BtnApplyDebugDays.TabIndex = 2;
+            this.BtnApplyDebugDays.Text = "OK";
+            this.BtnApplyDebugDays.UseVisualStyleBackColor = true;
+            this.BtnApplyDebugDays.Click += new System.EventHandler(this.BtnApplyDebugDays_Click);
+            // 
+            // NudDebugDays
+            // 
+            this.NudDebugDays.Location = new System.Drawing.Point(912, 12);
+            this.NudDebugDays.Name = "NudDebugDays";
+            this.NudDebugDays.Size = new System.Drawing.Size(45, 23);
+            this.NudDebugDays.TabIndex = 1;
             // 
             // label29
             // 
@@ -765,29 +783,13 @@ namespace MeteoBlueWrapper.UI
             this.LblCity1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblCity1.Click += new System.EventHandler(this.LblCity_Click);
             // 
-            // NudDebugDays
-            // 
-            this.NudDebugDays.Location = new System.Drawing.Point(912, 12);
-            this.NudDebugDays.Name = "NudDebugDays";
-            this.NudDebugDays.Size = new System.Drawing.Size(45, 23);
-            this.NudDebugDays.TabIndex = 1;
-            // 
-            // BtnApplyDebugDays
-            // 
-            this.BtnApplyDebugDays.Location = new System.Drawing.Point(963, 12);
-            this.BtnApplyDebugDays.Name = "BtnApplyDebugDays";
-            this.BtnApplyDebugDays.Size = new System.Drawing.Size(34, 23);
-            this.BtnApplyDebugDays.TabIndex = 2;
-            this.BtnApplyDebugDays.Text = "OK";
-            this.BtnApplyDebugDays.UseVisualStyleBackColor = true;
-            this.BtnApplyDebugDays.Click += new System.EventHandler(this.BtnApplyDebugDays_Click);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1009, 737);
             this.Controls.Add(this.splitContainer1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -797,6 +799,7 @@ namespace MeteoBlueWrapper.UI
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.NudDebugDays)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay15)).EndInit();
@@ -813,7 +816,6 @@ namespace MeteoBlueWrapper.UI
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PbxDay2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.NudDebugDays)).EndInit();
             this.ResumeLayout(false);
 
         }
