@@ -101,7 +101,6 @@ namespace MeteoBlueWrapper.UI
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Cursor = System.Windows.Forms.Cursors.HSplit;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.IsSplitterFixed = true;
@@ -373,6 +372,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity2
             // 
+            this.LblCity2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity2.Location = new System.Drawing.Point(69, 0);
@@ -386,6 +386,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity3
             // 
+            this.LblCity3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity3.Location = new System.Drawing.Point(136, 0);
@@ -399,6 +400,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity4
             // 
+            this.LblCity4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity4.Location = new System.Drawing.Point(203, 0);
@@ -412,6 +414,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity5
             // 
+            this.LblCity5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity5.Location = new System.Drawing.Point(270, 0);
@@ -425,6 +428,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity6
             // 
+            this.LblCity6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity6.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity6.Location = new System.Drawing.Point(337, 0);
@@ -438,6 +442,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity7
             // 
+            this.LblCity7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity7.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity7.Location = new System.Drawing.Point(404, 0);
@@ -451,6 +456,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity8
             // 
+            this.LblCity8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity8.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity8.Location = new System.Drawing.Point(471, 0);
@@ -464,6 +470,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity9
             // 
+            this.LblCity9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity9.Location = new System.Drawing.Point(538, 0);
@@ -477,6 +484,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity10
             // 
+            this.LblCity10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity10.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity10.Location = new System.Drawing.Point(605, 0);
@@ -490,6 +498,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity11
             // 
+            this.LblCity11.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity11.Location = new System.Drawing.Point(672, 0);
@@ -503,6 +512,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity12
             // 
+            this.LblCity12.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity12.Location = new System.Drawing.Point(739, 0);
@@ -516,6 +526,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity13
             // 
+            this.LblCity13.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity13.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity13.Location = new System.Drawing.Point(806, 0);
@@ -529,6 +540,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity14
             // 
+            this.LblCity14.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity14.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity14.Location = new System.Drawing.Point(873, 0);
@@ -542,6 +554,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity15
             // 
+            this.LblCity15.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity15.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity15.Location = new System.Drawing.Point(940, 0);
@@ -735,6 +748,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // LblCity1
             // 
+            this.LblCity1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.LblCity1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LblCity1.Location = new System.Drawing.Point(2, 0);
