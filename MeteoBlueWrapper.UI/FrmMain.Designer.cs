@@ -104,7 +104,9 @@ namespace MeteoBlueWrapper.UI
             this.splitContainer1.Cursor = System.Windows.Forms.Cursors.HSplit;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
+            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -115,40 +117,39 @@ namespace MeteoBlueWrapper.UI
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Size = new System.Drawing.Size(1441, 1410);
+            this.splitContainer1.Size = new System.Drawing.Size(1009, 737);
             this.splitContainer1.SplitterDistance = 54;
-            this.splitContainer1.SplitterWidth = 3;
+            this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 0;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label29.Location = new System.Drawing.Point(4, 8);
-            this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label29.Location = new System.Drawing.Point(3, 5);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(260, 64);
+            this.label29.Size = new System.Drawing.Size(171, 43);
             this.label29.TabIndex = 0;
             this.label29.Text = "Ferienwetter";
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 15;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666843F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.664177F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.666845F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.66418F));
             this.tableLayoutPanel1.Controls.Add(this.PbxDay1, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.PbxDay15, 14, 2);
             this.tableLayoutPanel1.Controls.Add(this.PbxDay14, 13, 2);
@@ -196,21 +197,22 @@ namespace MeteoBlueWrapper.UI
             this.tableLayoutPanel1.Controls.Add(this.LblCity1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1441, 1353);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1009, 681);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // PbxDay1
             // 
             this.PbxDay1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay1.Location = new System.Drawing.Point(3, 103);
+            this.PbxDay1.Location = new System.Drawing.Point(2, 52);
+            this.PbxDay1.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay1.Name = "PbxDay1";
-            this.PbxDay1.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay1.Size = new System.Drawing.Size(63, 627);
             this.PbxDay1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay1.TabIndex = 42;
             this.PbxDay1.TabStop = false;
@@ -218,9 +220,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay15
             // 
             this.PbxDay15.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay15.Location = new System.Drawing.Point(1347, 103);
+            this.PbxDay15.Location = new System.Drawing.Point(940, 52);
+            this.PbxDay15.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay15.Name = "PbxDay15";
-            this.PbxDay15.Size = new System.Drawing.Size(91, 1247);
+            this.PbxDay15.Size = new System.Drawing.Size(67, 627);
             this.PbxDay15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay15.TabIndex = 41;
             this.PbxDay15.TabStop = false;
@@ -228,9 +231,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay14
             // 
             this.PbxDay14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay14.Location = new System.Drawing.Point(1251, 103);
+            this.PbxDay14.Location = new System.Drawing.Point(873, 52);
+            this.PbxDay14.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay14.Name = "PbxDay14";
-            this.PbxDay14.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay14.Size = new System.Drawing.Size(63, 627);
             this.PbxDay14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay14.TabIndex = 40;
             this.PbxDay14.TabStop = false;
@@ -238,9 +242,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay13
             // 
             this.PbxDay13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay13.Location = new System.Drawing.Point(1155, 103);
+            this.PbxDay13.Location = new System.Drawing.Point(806, 52);
+            this.PbxDay13.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay13.Name = "PbxDay13";
-            this.PbxDay13.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay13.Size = new System.Drawing.Size(63, 627);
             this.PbxDay13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay13.TabIndex = 39;
             this.PbxDay13.TabStop = false;
@@ -248,9 +253,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay12
             // 
             this.PbxDay12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay12.Location = new System.Drawing.Point(1059, 103);
+            this.PbxDay12.Location = new System.Drawing.Point(739, 52);
+            this.PbxDay12.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay12.Name = "PbxDay12";
-            this.PbxDay12.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay12.Size = new System.Drawing.Size(63, 627);
             this.PbxDay12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay12.TabIndex = 38;
             this.PbxDay12.TabStop = false;
@@ -258,9 +264,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay11
             // 
             this.PbxDay11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay11.Location = new System.Drawing.Point(963, 103);
+            this.PbxDay11.Location = new System.Drawing.Point(672, 52);
+            this.PbxDay11.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay11.Name = "PbxDay11";
-            this.PbxDay11.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay11.Size = new System.Drawing.Size(63, 627);
             this.PbxDay11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay11.TabIndex = 37;
             this.PbxDay11.TabStop = false;
@@ -268,9 +275,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay10
             // 
             this.PbxDay10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay10.Location = new System.Drawing.Point(867, 103);
+            this.PbxDay10.Location = new System.Drawing.Point(605, 52);
+            this.PbxDay10.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay10.Name = "PbxDay10";
-            this.PbxDay10.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay10.Size = new System.Drawing.Size(63, 627);
             this.PbxDay10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay10.TabIndex = 36;
             this.PbxDay10.TabStop = false;
@@ -278,9 +286,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay9
             // 
             this.PbxDay9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay9.Location = new System.Drawing.Point(771, 103);
+            this.PbxDay9.Location = new System.Drawing.Point(538, 52);
+            this.PbxDay9.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay9.Name = "PbxDay9";
-            this.PbxDay9.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay9.Size = new System.Drawing.Size(63, 627);
             this.PbxDay9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay9.TabIndex = 35;
             this.PbxDay9.TabStop = false;
@@ -288,9 +297,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay8
             // 
             this.PbxDay8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay8.Location = new System.Drawing.Point(675, 103);
+            this.PbxDay8.Location = new System.Drawing.Point(471, 52);
+            this.PbxDay8.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay8.Name = "PbxDay8";
-            this.PbxDay8.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay8.Size = new System.Drawing.Size(63, 627);
             this.PbxDay8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay8.TabIndex = 34;
             this.PbxDay8.TabStop = false;
@@ -298,9 +308,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay7
             // 
             this.PbxDay7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay7.Location = new System.Drawing.Point(579, 103);
+            this.PbxDay7.Location = new System.Drawing.Point(404, 52);
+            this.PbxDay7.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay7.Name = "PbxDay7";
-            this.PbxDay7.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay7.Size = new System.Drawing.Size(63, 627);
             this.PbxDay7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay7.TabIndex = 33;
             this.PbxDay7.TabStop = false;
@@ -308,9 +319,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay6
             // 
             this.PbxDay6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay6.Location = new System.Drawing.Point(483, 103);
+            this.PbxDay6.Location = new System.Drawing.Point(337, 52);
+            this.PbxDay6.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay6.Name = "PbxDay6";
-            this.PbxDay6.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay6.Size = new System.Drawing.Size(63, 627);
             this.PbxDay6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay6.TabIndex = 32;
             this.PbxDay6.TabStop = false;
@@ -318,9 +330,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay5
             // 
             this.PbxDay5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay5.Location = new System.Drawing.Point(387, 103);
+            this.PbxDay5.Location = new System.Drawing.Point(270, 52);
+            this.PbxDay5.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay5.Name = "PbxDay5";
-            this.PbxDay5.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay5.Size = new System.Drawing.Size(63, 627);
             this.PbxDay5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay5.TabIndex = 31;
             this.PbxDay5.TabStop = false;
@@ -328,9 +341,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay4
             // 
             this.PbxDay4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay4.Location = new System.Drawing.Point(291, 103);
+            this.PbxDay4.Location = new System.Drawing.Point(203, 52);
+            this.PbxDay4.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay4.Name = "PbxDay4";
-            this.PbxDay4.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay4.Size = new System.Drawing.Size(63, 627);
             this.PbxDay4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay4.TabIndex = 30;
             this.PbxDay4.TabStop = false;
@@ -338,9 +352,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay3
             // 
             this.PbxDay3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay3.Location = new System.Drawing.Point(195, 103);
+            this.PbxDay3.Location = new System.Drawing.Point(136, 52);
+            this.PbxDay3.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay3.Name = "PbxDay3";
-            this.PbxDay3.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay3.Size = new System.Drawing.Size(63, 627);
             this.PbxDay3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay3.TabIndex = 29;
             this.PbxDay3.TabStop = false;
@@ -348,9 +363,10 @@ namespace MeteoBlueWrapper.UI
             // PbxDay2
             // 
             this.PbxDay2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.PbxDay2.Location = new System.Drawing.Point(99, 103);
+            this.PbxDay2.Location = new System.Drawing.Point(69, 52);
+            this.PbxDay2.Margin = new System.Windows.Forms.Padding(2);
             this.PbxDay2.Name = "PbxDay2";
-            this.PbxDay2.Size = new System.Drawing.Size(90, 1247);
+            this.PbxDay2.Size = new System.Drawing.Size(63, 627);
             this.PbxDay2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay2.TabIndex = 28;
             this.PbxDay2.TabStop = false;
@@ -359,9 +375,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity2.Location = new System.Drawing.Point(99, 0);
+            this.LblCity2.Location = new System.Drawing.Point(69, 0);
+            this.LblCity2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity2.Name = "LblCity2";
-            this.LblCity2.Size = new System.Drawing.Size(90, 50);
+            this.LblCity2.Size = new System.Drawing.Size(63, 25);
             this.LblCity2.TabIndex = 0;
             this.LblCity2.Text = "Davos";
             this.LblCity2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -371,9 +388,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity3.Location = new System.Drawing.Point(195, 0);
+            this.LblCity3.Location = new System.Drawing.Point(136, 0);
+            this.LblCity3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity3.Name = "LblCity3";
-            this.LblCity3.Size = new System.Drawing.Size(90, 50);
+            this.LblCity3.Size = new System.Drawing.Size(63, 25);
             this.LblCity3.TabIndex = 1;
             this.LblCity3.Text = "St. Moritz";
             this.LblCity3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -383,9 +401,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity4.Location = new System.Drawing.Point(291, 0);
+            this.LblCity4.Location = new System.Drawing.Point(203, 0);
+            this.LblCity4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity4.Name = "LblCity4";
-            this.LblCity4.Size = new System.Drawing.Size(90, 50);
+            this.LblCity4.Size = new System.Drawing.Size(63, 25);
             this.LblCity4.TabIndex = 2;
             this.LblCity4.Text = "Tenero";
             this.LblCity4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -395,9 +414,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity5.Location = new System.Drawing.Point(387, 0);
+            this.LblCity5.Location = new System.Drawing.Point(270, 0);
+            this.LblCity5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity5.Name = "LblCity5";
-            this.LblCity5.Size = new System.Drawing.Size(90, 50);
+            this.LblCity5.Size = new System.Drawing.Size(63, 25);
             this.LblCity5.TabIndex = 3;
             this.LblCity5.Text = "Tenero";
             this.LblCity5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -407,9 +427,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity6.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity6.Location = new System.Drawing.Point(483, 0);
+            this.LblCity6.Location = new System.Drawing.Point(337, 0);
+            this.LblCity6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity6.Name = "LblCity6";
-            this.LblCity6.Size = new System.Drawing.Size(90, 50);
+            this.LblCity6.Size = new System.Drawing.Size(63, 25);
             this.LblCity6.TabIndex = 4;
             this.LblCity6.Text = "Brig";
             this.LblCity6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -419,9 +440,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity7.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity7.Location = new System.Drawing.Point(579, 0);
+            this.LblCity7.Location = new System.Drawing.Point(404, 0);
+            this.LblCity7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity7.Name = "LblCity7";
-            this.LblCity7.Size = new System.Drawing.Size(90, 50);
+            this.LblCity7.Size = new System.Drawing.Size(63, 25);
             this.LblCity7.TabIndex = 5;
             this.LblCity7.Text = "Zermatt";
             this.LblCity7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -431,9 +453,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity8.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity8.Location = new System.Drawing.Point(675, 0);
+            this.LblCity8.Location = new System.Drawing.Point(471, 0);
+            this.LblCity8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity8.Name = "LblCity8";
-            this.LblCity8.Size = new System.Drawing.Size(90, 50);
+            this.LblCity8.Size = new System.Drawing.Size(63, 25);
             this.LblCity8.TabIndex = 6;
             this.LblCity8.Text = "Morges";
             this.LblCity8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -443,9 +466,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity9.Location = new System.Drawing.Point(771, 0);
+            this.LblCity9.Location = new System.Drawing.Point(538, 0);
+            this.LblCity9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity9.Name = "LblCity9";
-            this.LblCity9.Size = new System.Drawing.Size(90, 50);
+            this.LblCity9.Size = new System.Drawing.Size(63, 25);
             this.LblCity9.TabIndex = 7;
             this.LblCity9.Text = "Neuchatel";
             this.LblCity9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -455,9 +479,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity10.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity10.Location = new System.Drawing.Point(867, 0);
+            this.LblCity10.Location = new System.Drawing.Point(605, 0);
+            this.LblCity10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity10.Name = "LblCity10";
-            this.LblCity10.Size = new System.Drawing.Size(90, 50);
+            this.LblCity10.Size = new System.Drawing.Size(63, 25);
             this.LblCity10.TabIndex = 8;
             this.LblCity10.Text = "Sugiez";
             this.LblCity10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -467,9 +492,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity11.Location = new System.Drawing.Point(963, 0);
+            this.LblCity11.Location = new System.Drawing.Point(672, 0);
+            this.LblCity11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity11.Name = "LblCity11";
-            this.LblCity11.Size = new System.Drawing.Size(90, 50);
+            this.LblCity11.Size = new System.Drawing.Size(63, 25);
             this.LblCity11.TabIndex = 10;
             this.LblCity11.Text = "Sugiez";
             this.LblCity11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -479,9 +505,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity12.Location = new System.Drawing.Point(1059, 0);
+            this.LblCity12.Location = new System.Drawing.Point(739, 0);
+            this.LblCity12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity12.Name = "LblCity12";
-            this.LblCity12.Size = new System.Drawing.Size(90, 50);
+            this.LblCity12.Size = new System.Drawing.Size(63, 25);
             this.LblCity12.TabIndex = 9;
             this.LblCity12.Text = "Bern";
             this.LblCity12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -491,9 +518,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity13.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity13.Location = new System.Drawing.Point(1155, 0);
+            this.LblCity13.Location = new System.Drawing.Point(806, 0);
+            this.LblCity13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity13.Name = "LblCity13";
-            this.LblCity13.Size = new System.Drawing.Size(90, 50);
+            this.LblCity13.Size = new System.Drawing.Size(63, 25);
             this.LblCity13.TabIndex = 11;
             this.LblCity13.Text = "Luzern";
             this.LblCity13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -503,9 +531,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity14.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity14.Location = new System.Drawing.Point(1251, 0);
+            this.LblCity14.Location = new System.Drawing.Point(873, 0);
+            this.LblCity14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity14.Name = "LblCity14";
-            this.LblCity14.Size = new System.Drawing.Size(90, 50);
+            this.LblCity14.Size = new System.Drawing.Size(63, 25);
             this.LblCity14.TabIndex = 12;
             this.LblCity14.Text = "Arbon";
             this.LblCity14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -515,9 +544,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity15.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity15.Location = new System.Drawing.Point(1347, 0);
+            this.LblCity15.Location = new System.Drawing.Point(940, 0);
+            this.LblCity15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity15.Name = "LblCity15";
-            this.LblCity15.Size = new System.Drawing.Size(91, 50);
+            this.LblCity15.Size = new System.Drawing.Size(67, 25);
             this.LblCity15.TabIndex = 13;
             this.LblCity15.Text = "Arbon";
             this.LblCity15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -527,9 +557,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate2.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate2.Location = new System.Drawing.Point(99, 50);
+            this.LblDate2.Location = new System.Drawing.Point(69, 25);
+            this.LblDate2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate2.Name = "LblDate2";
-            this.LblDate2.Size = new System.Drawing.Size(90, 50);
+            this.LblDate2.Size = new System.Drawing.Size(63, 25);
             this.LblDate2.TabIndex = 14;
             this.LblDate2.Text = "Sa 04.09.";
             this.LblDate2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -538,9 +569,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate3.Location = new System.Drawing.Point(195, 50);
+            this.LblDate3.Location = new System.Drawing.Point(136, 25);
+            this.LblDate3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate3.Name = "LblDate3";
-            this.LblDate3.Size = new System.Drawing.Size(90, 50);
+            this.LblDate3.Size = new System.Drawing.Size(63, 25);
             this.LblDate3.TabIndex = 15;
             this.LblDate3.Text = "So 05.09.";
             this.LblDate3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -549,9 +581,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate4.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate4.Location = new System.Drawing.Point(291, 50);
+            this.LblDate4.Location = new System.Drawing.Point(203, 25);
+            this.LblDate4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate4.Name = "LblDate4";
-            this.LblDate4.Size = new System.Drawing.Size(90, 50);
+            this.LblDate4.Size = new System.Drawing.Size(63, 25);
             this.LblDate4.TabIndex = 16;
             this.LblDate4.Text = "Mo 06.09.";
             this.LblDate4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -560,9 +593,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate5.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate5.Location = new System.Drawing.Point(387, 50);
+            this.LblDate5.Location = new System.Drawing.Point(270, 25);
+            this.LblDate5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate5.Name = "LblDate5";
-            this.LblDate5.Size = new System.Drawing.Size(90, 50);
+            this.LblDate5.Size = new System.Drawing.Size(63, 25);
             this.LblDate5.TabIndex = 17;
             this.LblDate5.Text = "Di 07.09.";
             this.LblDate5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -571,9 +605,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate6.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate6.Location = new System.Drawing.Point(483, 50);
+            this.LblDate6.Location = new System.Drawing.Point(337, 25);
+            this.LblDate6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate6.Name = "LblDate6";
-            this.LblDate6.Size = new System.Drawing.Size(90, 50);
+            this.LblDate6.Size = new System.Drawing.Size(63, 25);
             this.LblDate6.TabIndex = 18;
             this.LblDate6.Text = "Mi 08.09.";
             this.LblDate6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -582,9 +617,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate7.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate7.Location = new System.Drawing.Point(579, 50);
+            this.LblDate7.Location = new System.Drawing.Point(404, 25);
+            this.LblDate7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate7.Name = "LblDate7";
-            this.LblDate7.Size = new System.Drawing.Size(90, 50);
+            this.LblDate7.Size = new System.Drawing.Size(63, 25);
             this.LblDate7.TabIndex = 19;
             this.LblDate7.Text = "Do 09.09.";
             this.LblDate7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -593,9 +629,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate8.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate8.Location = new System.Drawing.Point(675, 50);
+            this.LblDate8.Location = new System.Drawing.Point(471, 25);
+            this.LblDate8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate8.Name = "LblDate8";
-            this.LblDate8.Size = new System.Drawing.Size(90, 50);
+            this.LblDate8.Size = new System.Drawing.Size(63, 25);
             this.LblDate8.TabIndex = 20;
             this.LblDate8.Text = "Fr 10.09.";
             this.LblDate8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -604,9 +641,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate9.Location = new System.Drawing.Point(771, 50);
+            this.LblDate9.Location = new System.Drawing.Point(538, 25);
+            this.LblDate9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate9.Name = "LblDate9";
-            this.LblDate9.Size = new System.Drawing.Size(90, 50);
+            this.LblDate9.Size = new System.Drawing.Size(63, 25);
             this.LblDate9.TabIndex = 21;
             this.LblDate9.Text = "Sa 11.09.";
             this.LblDate9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -615,9 +653,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate10.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate10.Location = new System.Drawing.Point(867, 50);
+            this.LblDate10.Location = new System.Drawing.Point(605, 25);
+            this.LblDate10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate10.Name = "LblDate10";
-            this.LblDate10.Size = new System.Drawing.Size(90, 50);
+            this.LblDate10.Size = new System.Drawing.Size(63, 25);
             this.LblDate10.TabIndex = 22;
             this.LblDate10.Text = "So 12.09.";
             this.LblDate10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -626,9 +665,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate11.Location = new System.Drawing.Point(963, 50);
+            this.LblDate11.Location = new System.Drawing.Point(672, 25);
+            this.LblDate11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate11.Name = "LblDate11";
-            this.LblDate11.Size = new System.Drawing.Size(90, 50);
+            this.LblDate11.Size = new System.Drawing.Size(63, 25);
             this.LblDate11.TabIndex = 23;
             this.LblDate11.Text = "Mo 13.09.";
             this.LblDate11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -637,9 +677,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate12.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate12.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate12.Location = new System.Drawing.Point(1059, 50);
+            this.LblDate12.Location = new System.Drawing.Point(739, 25);
+            this.LblDate12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate12.Name = "LblDate12";
-            this.LblDate12.Size = new System.Drawing.Size(90, 50);
+            this.LblDate12.Size = new System.Drawing.Size(63, 25);
             this.LblDate12.TabIndex = 24;
             this.LblDate12.Text = "Di 14.09.";
             this.LblDate12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -648,9 +689,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate13.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate13.Location = new System.Drawing.Point(1155, 50);
+            this.LblDate13.Location = new System.Drawing.Point(806, 25);
+            this.LblDate13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate13.Name = "LblDate13";
-            this.LblDate13.Size = new System.Drawing.Size(90, 50);
+            this.LblDate13.Size = new System.Drawing.Size(63, 25);
             this.LblDate13.TabIndex = 25;
             this.LblDate13.Text = "Mi 15.09.";
             this.LblDate13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -659,9 +701,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate14.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate14.Location = new System.Drawing.Point(1251, 50);
+            this.LblDate14.Location = new System.Drawing.Point(873, 25);
+            this.LblDate14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate14.Name = "LblDate14";
-            this.LblDate14.Size = new System.Drawing.Size(90, 50);
+            this.LblDate14.Size = new System.Drawing.Size(63, 25);
             this.LblDate14.TabIndex = 26;
             this.LblDate14.Text = "Do 16.09.";
             this.LblDate14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -670,9 +713,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate15.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate15.Location = new System.Drawing.Point(1347, 50);
+            this.LblDate15.Location = new System.Drawing.Point(940, 25);
+            this.LblDate15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate15.Name = "LblDate15";
-            this.LblDate15.Size = new System.Drawing.Size(91, 50);
+            this.LblDate15.Size = new System.Drawing.Size(67, 25);
             this.LblDate15.TabIndex = 27;
             this.LblDate15.Text = "Fr 17.09.";
             this.LblDate15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -681,9 +725,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblDate1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblDate1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.LblDate1.Location = new System.Drawing.Point(3, 50);
+            this.LblDate1.Location = new System.Drawing.Point(2, 25);
+            this.LblDate1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblDate1.Name = "LblDate1";
-            this.LblDate1.Size = new System.Drawing.Size(90, 50);
+            this.LblDate1.Size = new System.Drawing.Size(63, 25);
             this.LblDate1.TabIndex = 43;
             this.LblDate1.Text = "Fr 03.09.";
             this.LblDate1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -692,9 +737,10 @@ namespace MeteoBlueWrapper.UI
             // 
             this.LblCity1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LblCity1.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.LblCity1.Location = new System.Drawing.Point(3, 0);
+            this.LblCity1.Location = new System.Drawing.Point(2, 0);
+            this.LblCity1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblCity1.Name = "LblCity1";
-            this.LblCity1.Size = new System.Drawing.Size(90, 50);
+            this.LblCity1.Size = new System.Drawing.Size(63, 25);
             this.LblCity1.TabIndex = 44;
             this.LblCity1.Text = "Arbon";
             this.LblCity1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -702,10 +748,11 @@ namespace MeteoBlueWrapper.UI
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1441, 1410);
+            this.ClientSize = new System.Drawing.Size(1009, 737);
             this.Controls.Add(this.splitContainer1);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ferienwetter";
