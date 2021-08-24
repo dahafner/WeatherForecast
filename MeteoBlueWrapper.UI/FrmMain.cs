@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Drawing;
 using System.Net;
 using System.Net.Cache;
@@ -51,8 +52,10 @@ namespace MeteoBlueWrapper.UI
                     var day = this.days[i];
 
                     // -- Show city and date --
-                    var city = this.tableLayoutPanel1.Controls.Find($"LblCity{i + 1}", false);
-                    ((Label)city[0]).Text = day.City;
+                    var cityControl = this.tableLayoutPanel1.Controls.Find($"LblCity{i + 1}", false);
+                    var lblCity = ((Label)cityControl[0]);
+                    lblCity.Text = day.City;
+                    lblCity.Tag = day.Url;
                     var date = this.tableLayoutPanel1.Controls.Find($"LblDate{i + 1}", false);
                     ((Label)date[0]).Text = day.DateText;
 
@@ -94,6 +97,15 @@ namespace MeteoBlueWrapper.UI
                     var pbx = this.tableLayoutPanel1.Controls.Find($"PbxDay{i + 1}", false);
                     ((PictureBox)pbx[0]).Image = day.CroppedImage;
                 }
+            }
+        }
+
+        private void LblCity_Click(object sender, EventArgs e)
+        {
+            var lblCity = (Label)sender;
+            if (lblCity.Tag != null)
+            {
+                Process.Start("explorer.exe", lblCity.Tag.ToString());
             }
         }
     }
