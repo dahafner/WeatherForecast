@@ -90,6 +90,7 @@ namespace MeteoBlueWrapper.UI
                     url = url.Replace("&amp;", "&");
                     url = url.Substring(8, url.Length - 9);
                     day.ImageUrl = "https://" + url;
+                    pbx.Tag = day.ImageUrl;
 
                     // -- Download image --
                     // Loading the image from disk with the using statement prevents any file lock
@@ -109,7 +110,7 @@ namespace MeteoBlueWrapper.UI
                     day.CroppedImage = bmpImage.Clone(new Rectangle(left, 90, widthPart, day.Image.Height - 90), bmpImage.PixelFormat);
 
                     // -- Show image --                    
-                    pbx.Image = day.CroppedImage;
+                    pbx.Image = day.CroppedImage;                    
                 }
             }
         }
@@ -119,7 +120,8 @@ namespace MeteoBlueWrapper.UI
             var lblCity = (Label)sender;
             if (lblCity.Tag != null)
             {
-                Process.Start("explorer.exe", lblCity.Tag.ToString());
+                var webview = new FrmWeb(lblCity.Tag.ToString());
+                webview.ShowDialog();
             }
         }
 
@@ -127,6 +129,16 @@ namespace MeteoBlueWrapper.UI
         {
             this.debugDays = (int)this.NudDebugDays.Value;
             this.GetImages();
+        }
+
+        private void PbxDay_Click(object sender, EventArgs e)
+        {
+            var pbxImage = (PictureBox)sender;
+            if (pbxImage.Tag != null)
+            {
+                var webview = new FrmWeb(pbxImage.Tag.ToString());
+                webview.ShowDialog();
+            }
         }
     }
 }

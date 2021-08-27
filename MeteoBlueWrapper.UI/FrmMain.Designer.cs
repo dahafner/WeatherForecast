@@ -238,6 +238,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay1.TabIndex = 42;
             this.PbxDay1.TabStop = false;
+            this.PbxDay1.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay15
             // 
@@ -249,6 +250,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay15.TabIndex = 41;
             this.PbxDay15.TabStop = false;
+            this.PbxDay15.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay14
             // 
@@ -260,6 +262,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay14.TabIndex = 40;
             this.PbxDay14.TabStop = false;
+            this.PbxDay14.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay13
             // 
@@ -271,6 +274,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay13.TabIndex = 39;
             this.PbxDay13.TabStop = false;
+            this.PbxDay13.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay12
             // 
@@ -282,6 +286,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay12.TabIndex = 38;
             this.PbxDay12.TabStop = false;
+            this.PbxDay12.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay11
             // 
@@ -293,6 +298,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay11.TabIndex = 37;
             this.PbxDay11.TabStop = false;
+            this.PbxDay11.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay10
             // 
@@ -304,6 +310,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay10.TabIndex = 36;
             this.PbxDay10.TabStop = false;
+            this.PbxDay10.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay9
             // 
@@ -315,6 +322,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay9.TabIndex = 35;
             this.PbxDay9.TabStop = false;
+            this.PbxDay9.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay8
             // 
@@ -326,6 +334,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay8.TabIndex = 34;
             this.PbxDay8.TabStop = false;
+            this.PbxDay8.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay7
             // 
@@ -337,6 +346,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay7.TabIndex = 33;
             this.PbxDay7.TabStop = false;
+            this.PbxDay7.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay6
             // 
@@ -348,6 +358,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay6.TabIndex = 32;
             this.PbxDay6.TabStop = false;
+            this.PbxDay6.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay5
             // 
@@ -359,6 +370,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay5.TabIndex = 31;
             this.PbxDay5.TabStop = false;
+            this.PbxDay5.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay4
             // 
@@ -370,6 +382,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay4.TabIndex = 30;
             this.PbxDay4.TabStop = false;
+            this.PbxDay4.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay3
             // 
@@ -381,6 +394,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay3.TabIndex = 29;
             this.PbxDay3.TabStop = false;
+            this.PbxDay3.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // PbxDay2
             // 
@@ -392,6 +406,7 @@ namespace MeteoBlueWrapper.UI
             this.PbxDay2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.PbxDay2.TabIndex = 28;
             this.PbxDay2.TabStop = false;
+            this.PbxDay2.Click += new System.EventHandler(this.PbxDay_Click);
             // 
             // LblCity2
             // 
