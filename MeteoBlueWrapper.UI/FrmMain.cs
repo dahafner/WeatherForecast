@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
 using System.Drawing;
 using System.Net;
 using System.Net.Cache;
@@ -11,6 +10,7 @@ namespace MeteoBlueWrapper.UI
     public partial class FrmMain : Form
     {
         private readonly List<Day> days = new();
+        private DateTime today = DateTime.Now;
         private int debugDays = 0;
 
         public FrmMain()
@@ -58,7 +58,13 @@ namespace MeteoBlueWrapper.UI
                     lblCity.Text = day.City;
                     lblCity.Tag = day.Url;
                     var date = this.tableLayoutPanel1.Controls.Find($"LblDate{i + 1}", false);
-                    ((Label)date[0]).Text = day.DateText;
+                    var lblDate = (Label)date[0];
+                    lblDate.Text = day.DateText;
+                    lblDate.Tag = day.Date;
+
+                    // -- Mark today's date with some color --
+                    lblCity.BackColor = day.Date == this.today.Date ? Color.LightGreen : SystemColors.Control;
+                    lblDate.BackColor = day.Date == this.today.Date ? Color.LightGreen : SystemColors.Control;
 
                     // -- Calculate days until --
                     // Add debug days to pretend we are in the future
@@ -114,7 +120,7 @@ namespace MeteoBlueWrapper.UI
                 }
             }
         }
-
+                
         private void LblCity_Click(object sender, EventArgs e)
         {
             var lblCity = (Label)sender;
@@ -128,6 +134,7 @@ namespace MeteoBlueWrapper.UI
         private void BtnApplyDebugDays_Click(object sender, EventArgs e)
         {
             this.debugDays = (int)this.NudDebugDays.Value;
+            this.today = DateTime.Now.AddDays(this.debugDays);
             this.GetImages();
         }
 
