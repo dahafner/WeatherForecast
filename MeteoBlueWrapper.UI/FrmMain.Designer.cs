@@ -80,6 +80,7 @@ namespace MeteoBlueWrapper.UI
             this.LblDate15 = new System.Windows.Forms.Label();
             this.LblDate1 = new System.Windows.Forms.Label();
             this.LblCity1 = new System.Windows.Forms.Label();
+            this.BtnEditor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -115,6 +116,7 @@ namespace MeteoBlueWrapper.UI
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.BtnEditor);
             this.splitContainer1.Panel1.Controls.Add(this.BtnApplyDebugDays);
             this.splitContainer1.Panel1.Controls.Add(this.NudDebugDays);
             this.splitContainer1.Panel1.Controls.Add(this.label29);
@@ -798,6 +800,16 @@ namespace MeteoBlueWrapper.UI
             this.LblCity1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblCity1.Click += new System.EventHandler(this.LblCity_Click);
             // 
+            // BtnEditor
+            // 
+            this.BtnEditor.Location = new System.Drawing.Point(831, 12);
+            this.BtnEditor.Name = "BtnEditor";
+            this.BtnEditor.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditor.TabIndex = 3;
+            this.BtnEditor.Text = "Editor";
+            this.BtnEditor.UseVisualStyleBackColor = true;
+            this.BtnEditor.Click += new System.EventHandler(this.BtnEditor_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -887,6 +899,7 @@ namespace MeteoBlueWrapper.UI
         private System.Windows.Forms.Label LblCity1;
         private System.Windows.Forms.Button BtnApplyDebugDays;
         private System.Windows.Forms.NumericUpDown NudDebugDays;
+        private System.Windows.Forms.Button BtnEditor;
     }
 }
 

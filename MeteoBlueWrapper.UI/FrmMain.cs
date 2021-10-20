@@ -140,5 +140,12 @@ namespace MeteoBlueWrapper.UI
                 webview.ShowDialog();
             }
         }
+
+        private void BtnEditor_Click(object sender, EventArgs e)
+        {
+            var frmEditor = new FrmEditor { Days = this.days };
+            frmEditor.ShowDialog();
+            this.GetImages();
+        }
     }
 }
