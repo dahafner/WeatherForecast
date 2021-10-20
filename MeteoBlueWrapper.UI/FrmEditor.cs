@@ -64,6 +64,8 @@ namespace MeteoBlueWrapper.UI
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             this.ClearInputs();
+            this.LvwDays.SelectedItems.Clear();
+            this.selectedDay = null;
         }
 
         private void ClearInputs()
