@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
+using System.IO;
 using System.Net;
 using System.Net.Cache;
 using System.Windows.Forms;
@@ -23,21 +25,12 @@ namespace MeteoBlueWrapper.UI
 
         private void InitLists()
         {
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731", Date = new DateTime(2021, 9, 3), City = "Arbon", DateText = "Fr 03.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/davos_schweiz_2661039", Date = new DateTime(2021, 9, 4), City = "Davos", DateText = "Sa 04.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sankt-moritz_schweiz_2658813", Date = new DateTime(2021, 9, 5), City = "St. Moritz", DateText = "So 05.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/tenero_schweiz_2658407", Date = new DateTime(2021, 9, 6), City = "Tenero", DateText = "Mo 06.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/tenero_schweiz_2658407", Date = new DateTime(2021, 9, 7), City = "Tenero", DateText = "Di 07.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/brig_schweiz_2661394", Date = new DateTime(2021, 9, 8), City = "Brig", DateText = "Mi 08.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/zermatt_schweiz_2657928", Date = new DateTime(2021, 9, 9), City = "Zermatt", DateText = "Do 09.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/morges_schweiz_2659587", Date = new DateTime(2021, 9, 10), City = "Morges", DateText = "Fr 10.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/neuenburg_schweiz_2659496", Date = new DateTime(2021, 9, 11), City = "Neuchatel", DateText = "Sa 11.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sugiez_schweiz_2658458", Date = new DateTime(2021, 9, 12), City = "Sugiez", DateText = "So 12.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/sugiez_schweiz_2658458", Date = new DateTime(2021, 9, 13), City = "Sugiez", DateText = "Mo 13.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/bern_schweiz_2661552", Date = new DateTime(2021, 9, 14), City = "Bern", DateText = "Di 14.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/luzern_schweiz_2659811", Date = new DateTime(2021, 9, 15), City = "Luzern", DateText = "Mi 15.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731", Date = new DateTime(2021, 9, 16), City = "Arbon", DateText = "Do 16.09." });
-            this.days.Add(new Day { Url = "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731", Date = new DateTime(2021, 9, 17), City = "Arbon", DateText = "Fr 17.09." });
+            if (File.Exists("tours\\grandtour.json"))
+            {
+                this.days.Clear();
+                var json = File.ReadAllText("tours\\grandtour.json");
+                this.days.AddRange(JsonConvert.DeserializeObject<List<Day>>(json));
+            }            
         }
 
         private async void GetImages()

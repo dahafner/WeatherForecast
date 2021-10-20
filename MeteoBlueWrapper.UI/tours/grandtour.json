@@ -1,0 +1,152 @@
+[
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-03T00:00:00",
+    "DaysUntil": 0,
+    "City": "Arbon",
+    "DateText": "Fr 03.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/davos_schweiz_2661039",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-04T00:00:00",
+    "DaysUntil": 0,
+    "City": "Davos",
+    "DateText": "Sa 04.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/sankt-moritz_schweiz_2658813",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-05T00:00:00",
+    "DaysUntil": 0,
+    "City": "St. Moritz",
+    "DateText": "So 05.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/tenero_schweiz_2658407",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-06T00:00:00",
+    "DaysUntil": 0,
+    "City": "Tenero",
+    "DateText": "Mo 06.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/tenero_schweiz_2658407",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-07T00:00:00",
+    "DaysUntil": 0,
+    "City": "Tenero",
+    "DateText": "Di 07.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/brig_schweiz_2661394",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-08T00:00:00",
+    "DaysUntil": 0,
+    "City": "Brig",
+    "DateText": "Mi 08.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/zermatt_schweiz_2657928",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-09T00:00:00",
+    "DaysUntil": 0,
+    "City": "Zermatt",
+    "DateText": "Do 09.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/morges_schweiz_2659587",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-10T00:00:00",
+    "DaysUntil": 0,
+    "City": "Morges",
+    "DateText": "Fr 10.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/neuenburg_schweiz_2659496",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-11T00:00:00",
+    "DaysUntil": 0,
+    "City": "Neuchatel",
+    "DateText": "Sa 11.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/sugiez_schweiz_2658458",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-12T00:00:00",
+    "DaysUntil": 0,
+    "City": "Sugiez",
+    "DateText": "So 12.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/sugiez_schweiz_2658458",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-13T00:00:00",
+    "DaysUntil": 0,
+    "City": "Sugiez",
+    "DateText": "Mo 13.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/bern_schweiz_2661552",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-14T00:00:00",
+    "DaysUntil": 0,
+    "City": "Bern",
+    "DateText": "Di 14.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/luzern_schweiz_2659811",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-15T00:00:00",
+    "DaysUntil": 0,
+    "City": "Luzern",
+    "DateText": "Mi 15.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-16T00:00:00",
+    "DaysUntil": 0,
+    "City": "Arbon",
+    "DateText": "Do 16.09."
+  },
+  {
+    "Url": "https://www.meteoblue.com/de/wetter/14-tage/arbon_schweiz_2661731",
+    "ImageUrl": null,
+    "Image": null,
+    "CroppedImage": null,
+    "Date": "2021-09-17T00:00:00",
+    "DaysUntil": 0,
+    "City": "Arbon",
+    "DateText": "Fr 17.09."
+  }
+]
