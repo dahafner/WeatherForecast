@@ -17,6 +17,11 @@ namespace MeteoBlueWrapper.UI
 
         public List<Day> Days { get; set; }
 
+        private void FrmEditor_Load(object sender, EventArgs e)
+        {
+            this.ShowDays();
+        }
+
         private void LvwDays_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (this.LvwDays.SelectedItems.Count > 0)
@@ -26,11 +31,40 @@ namespace MeteoBlueWrapper.UI
                 this.TxtCity.Text = this.selectedDay.City;
                 this.TxtDateText.Text = this.selectedDay.DateText;
                 this.TxtUrl.Text = this.selectedDay.Url;
+                this.EnableDisable(true);
             }
             else
             {
                 this.selectedDay = null;
+                this.EnableDisable(false);
             }
+        }
+
+        private void BtnDelete_Click(object sender, EventArgs e)
+        {
+            this.LvwDays.Items.Remove(this.LvwDays.SelectedItems[0]);
+            this.ClearInputs();
+            this.EnableDisable(false);
+        }
+
+        private void BtnSave_Click(object sender, EventArgs e)
+        {
+            this.selectedDay.Date = this.DtpDate.Value;
+            this.selectedDay.City = this.TxtCity.Text;
+            this.selectedDay.DateText = this.TxtDateText.Text;
+            this.selectedDay.Url = this.TxtUrl.Text;
+
+            this.ClearInputs();
+            this.EnableDisable(false);
+            this.ShowDays();
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.ClearInputs();
+            this.EnableDisable(false);
+            this.LvwDays.SelectedItems.Clear();
+            this.selectedDay = null;
         }
 
         private void ShowDays()
@@ -47,29 +81,6 @@ namespace MeteoBlueWrapper.UI
             }
         }
 
-        private void FrmEditor_Load(object sender, EventArgs e)
-        {
-            this.ShowDays();
-        }
-
-        private void BtnSave_Click(object sender, EventArgs e)
-        {
-            this.selectedDay.Date = this.DtpDate.Value;
-            this.selectedDay.City = this.TxtCity.Text;
-            this.selectedDay.DateText = this.TxtDateText.Text;
-            this.selectedDay.Url = this.TxtUrl.Text;
-
-            this.ClearInputs();
-            this.ShowDays();
-        }
-
-        private void BtnCancel_Click(object sender, EventArgs e)
-        {
-            this.ClearInputs();
-            this.LvwDays.SelectedItems.Clear();
-            this.selectedDay = null;
-        }
-
         private void ClearInputs()
         {
             this.DtpDate.Value = DateTime.Now;
@@ -78,9 +89,11 @@ namespace MeteoBlueWrapper.UI
             this.TxtUrl.Text = null;
         }
 
-        private void BtnClose_Click(object sender, EventArgs e)
+        private void EnableDisable(bool enable)
         {
-            this.Close();
+            this.BtnSave.Enabled = enable;
+            this.BtnDelete.Enabled = enable;
+            this.BtnCancel.Enabled = enable;
         }
 
         private void BtnSaveList_Click(object sender, EventArgs e)
@@ -101,7 +114,13 @@ namespace MeteoBlueWrapper.UI
                 this.Days.AddRange(JsonConvert.DeserializeObject<List<Day>>(json));
                 this.ShowDays();
                 this.ClearInputs();
+                this.EnableDisable(false);
             }
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

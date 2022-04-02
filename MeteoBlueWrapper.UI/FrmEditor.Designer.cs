@@ -37,6 +37,10 @@
             this.ChrDateText = new System.Windows.Forms.ColumnHeader();
             this.ChrUrl = new System.Windows.Forms.ColumnHeader();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.BtnDelete = new System.Windows.Forms.Button();
+            this.BtnSaveList = new System.Windows.Forms.Button();
+            this.BtnLoadList = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.BtnClose = new System.Windows.Forms.Button();
             this.BtnSave = new System.Windows.Forms.Button();
             this.BtnCancel = new System.Windows.Forms.Button();
@@ -48,9 +52,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.DtpDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.BtnLoadList = new System.Windows.Forms.Button();
-            this.BtnSaveList = new System.Windows.Forms.Button();
             this.SfdSave = new System.Windows.Forms.SaveFileDialog();
             this.OfdOpen = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -132,6 +133,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.BtnDelete);
             this.groupBox2.Controls.Add(this.BtnSaveList);
             this.groupBox2.Controls.Add(this.BtnLoadList);
             this.groupBox2.Controls.Add(this.label5);
@@ -154,6 +156,46 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Eigenschaften";
             // 
+            // BtnDelete
+            // 
+            this.BtnDelete.Enabled = false;
+            this.BtnDelete.Location = new System.Drawing.Point(64, 297);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(64, 23);
+            this.BtnDelete.TabIndex = 11;
+            this.BtnDelete.Text = "Löschen";
+            this.BtnDelete.UseVisualStyleBackColor = true;
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // BtnSaveList
+            // 
+            this.BtnSaveList.Location = new System.Drawing.Point(64, 481);
+            this.BtnSaveList.Name = "BtnSaveList";
+            this.BtnSaveList.Size = new System.Drawing.Size(110, 23);
+            this.BtnSaveList.TabIndex = 10;
+            this.BtnSaveList.Text = "Speichern...";
+            this.BtnSaveList.UseVisualStyleBackColor = true;
+            this.BtnSaveList.Click += new System.EventHandler(this.BtnSaveList_Click);
+            // 
+            // BtnLoadList
+            // 
+            this.BtnLoadList.Location = new System.Drawing.Point(180, 481);
+            this.BtnLoadList.Name = "BtnLoadList";
+            this.BtnLoadList.Size = new System.Drawing.Size(110, 23);
+            this.BtnLoadList.TabIndex = 9;
+            this.BtnLoadList.Text = "Öffnen...";
+            this.BtnLoadList.UseVisualStyleBackColor = true;
+            this.BtnLoadList.Click += new System.EventHandler(this.BtnLoadList_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 485);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 15);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Liste:";
+            // 
             // BtnClose
             // 
             this.BtnClose.Location = new System.Drawing.Point(6, 510);
@@ -166,6 +208,7 @@
             // 
             // BtnSave
             // 
+            this.BtnSave.Enabled = false;
             this.BtnSave.Location = new System.Drawing.Point(134, 297);
             this.BtnSave.Name = "BtnSave";
             this.BtnSave.Size = new System.Drawing.Size(75, 23);
@@ -176,6 +219,7 @@
             // 
             // BtnCancel
             // 
+            this.BtnCancel.Enabled = false;
             this.BtnCancel.Location = new System.Drawing.Point(215, 297);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(75, 23);
@@ -249,35 +293,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Datum:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 485);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 15);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Liste:";
-            // 
-            // BtnLoadList
-            // 
-            this.BtnLoadList.Location = new System.Drawing.Point(180, 481);
-            this.BtnLoadList.Name = "BtnLoadList";
-            this.BtnLoadList.Size = new System.Drawing.Size(110, 23);
-            this.BtnLoadList.TabIndex = 9;
-            this.BtnLoadList.Text = "Öffnen...";
-            this.BtnLoadList.UseVisualStyleBackColor = true;
-            this.BtnLoadList.Click += new System.EventHandler(this.BtnLoadList_Click);
-            // 
-            // BtnSaveList
-            // 
-            this.BtnSaveList.Location = new System.Drawing.Point(64, 481);
-            this.BtnSaveList.Name = "BtnSaveList";
-            this.BtnSaveList.Size = new System.Drawing.Size(110, 23);
-            this.BtnSaveList.TabIndex = 10;
-            this.BtnSaveList.Text = "Speichern...";
-            this.BtnSaveList.UseVisualStyleBackColor = true;
-            this.BtnSaveList.Click += new System.EventHandler(this.BtnSaveList_Click);
-            // 
             // SfdSave
             // 
             this.SfdSave.Filter = "*.json|Json Files";
@@ -336,5 +351,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.SaveFileDialog SfdSave;
         private System.Windows.Forms.OpenFileDialog OfdOpen;
+        private System.Windows.Forms.Button BtnDelete;
     }
 }
