@@ -31,6 +31,7 @@ namespace MeteoBlueWrapper.UI
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.BtnEditor = new System.Windows.Forms.Button();
             this.BtnApplyDebugDays = new System.Windows.Forms.Button();
             this.NudDebugDays = new System.Windows.Forms.NumericUpDown();
             this.label29 = new System.Windows.Forms.Label();
@@ -80,7 +81,6 @@ namespace MeteoBlueWrapper.UI
             this.LblDate15 = new System.Windows.Forms.Label();
             this.LblDate1 = new System.Windows.Forms.Label();
             this.LblCity1 = new System.Windows.Forms.Label();
-            this.BtnEditor = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -129,6 +129,16 @@ namespace MeteoBlueWrapper.UI
             this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 0;
             // 
+            // BtnEditor
+            // 
+            this.BtnEditor.Location = new System.Drawing.Point(831, 12);
+            this.BtnEditor.Name = "BtnEditor";
+            this.BtnEditor.Size = new System.Drawing.Size(75, 23);
+            this.BtnEditor.TabIndex = 3;
+            this.BtnEditor.Text = "Editor";
+            this.BtnEditor.UseVisualStyleBackColor = true;
+            this.BtnEditor.Click += new System.EventHandler(this.BtnEditor_Click);
+            // 
             // BtnApplyDebugDays
             // 
             this.BtnApplyDebugDays.Location = new System.Drawing.Point(963, 12);
@@ -142,9 +152,24 @@ namespace MeteoBlueWrapper.UI
             // NudDebugDays
             // 
             this.NudDebugDays.Location = new System.Drawing.Point(912, 12);
+            this.NudDebugDays.Maximum = new decimal(new int[] {
+            365,
+            0,
+            0,
+            0});
+            this.NudDebugDays.Minimum = new decimal(new int[] {
+            365,
+            0,
+            0,
+            -2147483648});
             this.NudDebugDays.Name = "NudDebugDays";
             this.NudDebugDays.Size = new System.Drawing.Size(45, 23);
             this.NudDebugDays.TabIndex = 1;
+            this.NudDebugDays.Value = new decimal(new int[] {
+            180,
+            0,
+            0,
+            0});
             // 
             // label29
             // 
@@ -799,16 +824,6 @@ namespace MeteoBlueWrapper.UI
             this.LblCity1.Text = "Arbon";
             this.LblCity1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.LblCity1.Click += new System.EventHandler(this.LblCity_Click);
-            // 
-            // BtnEditor
-            // 
-            this.BtnEditor.Location = new System.Drawing.Point(831, 12);
-            this.BtnEditor.Name = "BtnEditor";
-            this.BtnEditor.Size = new System.Drawing.Size(75, 23);
-            this.BtnEditor.TabIndex = 3;
-            this.BtnEditor.Text = "Editor";
-            this.BtnEditor.UseVisualStyleBackColor = true;
-            this.BtnEditor.Click += new System.EventHandler(this.BtnEditor_Click);
             // 
             // FrmMain
             // 

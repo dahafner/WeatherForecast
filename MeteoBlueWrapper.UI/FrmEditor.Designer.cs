@@ -48,6 +48,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.DtpDate = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.BtnLoadList = new System.Windows.Forms.Button();
+            this.BtnSaveList = new System.Windows.Forms.Button();
+            this.SfdSave = new System.Windows.Forms.SaveFileDialog();
+            this.OfdOpen = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -58,7 +63,6 @@
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer1.IsSplitterFixed = true;
@@ -79,7 +83,6 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.LvwDays);
-            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -95,7 +98,6 @@
             this.ChrCity,
             this.ChrDateText,
             this.ChrUrl});
-            this.LvwDays.Cursor = System.Windows.Forms.Cursors.Default;
             this.LvwDays.Dock = System.Windows.Forms.DockStyle.Fill;
             this.LvwDays.FullRowSelect = true;
             this.LvwDays.GridLines = true;
@@ -130,6 +132,9 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.BtnSaveList);
+            this.groupBox2.Controls.Add(this.BtnLoadList);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.BtnClose);
             this.groupBox2.Controls.Add(this.BtnSave);
             this.groupBox2.Controls.Add(this.BtnCancel);
@@ -244,6 +249,45 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Datum:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 485);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(34, 15);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Liste:";
+            // 
+            // BtnLoadList
+            // 
+            this.BtnLoadList.Location = new System.Drawing.Point(180, 481);
+            this.BtnLoadList.Name = "BtnLoadList";
+            this.BtnLoadList.Size = new System.Drawing.Size(110, 23);
+            this.BtnLoadList.TabIndex = 9;
+            this.BtnLoadList.Text = "Öffnen...";
+            this.BtnLoadList.UseVisualStyleBackColor = true;
+            this.BtnLoadList.Click += new System.EventHandler(this.BtnLoadList_Click);
+            // 
+            // BtnSaveList
+            // 
+            this.BtnSaveList.Location = new System.Drawing.Point(64, 481);
+            this.BtnSaveList.Name = "BtnSaveList";
+            this.BtnSaveList.Size = new System.Drawing.Size(110, 23);
+            this.BtnSaveList.TabIndex = 10;
+            this.BtnSaveList.Text = "Speichern...";
+            this.BtnSaveList.UseVisualStyleBackColor = true;
+            this.BtnSaveList.Click += new System.EventHandler(this.BtnSaveList_Click);
+            // 
+            // SfdSave
+            // 
+            this.SfdSave.Filter = "*.json|Json Files";
+            // 
+            // OfdOpen
+            // 
+            this.OfdOpen.FileName = "*.json";
+            this.OfdOpen.Filter = "*.json|Json Files";
+            this.OfdOpen.RestoreDirectory = true;
+            // 
             // FrmEditor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -287,5 +331,10 @@
         private System.Windows.Forms.DateTimePicker DtpDate;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button BtnClose;
+        private System.Windows.Forms.Button BtnSaveList;
+        private System.Windows.Forms.Button BtnLoadList;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.SaveFileDialog SfdSave;
+        private System.Windows.Forms.OpenFileDialog OfdOpen;
     }
 }

@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Windows.Forms;
 
 namespace MeteoBlueWrapper.UI
@@ -31,7 +33,7 @@ namespace MeteoBlueWrapper.UI
             }
         }
 
-        private void LoadDays()
+        private void ShowDays()
         {
             this.LvwDays.Items.Clear();
             foreach (var day in this.Days)
@@ -47,7 +49,7 @@ namespace MeteoBlueWrapper.UI
 
         private void FrmEditor_Load(object sender, EventArgs e)
         {
-            this.LoadDays();
+            this.ShowDays();
         }
 
         private void BtnSave_Click(object sender, EventArgs e)
@@ -58,7 +60,7 @@ namespace MeteoBlueWrapper.UI
             this.selectedDay.Url = this.TxtUrl.Text;
 
             this.ClearInputs();
-            this.LoadDays();
+            this.ShowDays();
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
@@ -79,6 +81,27 @@ namespace MeteoBlueWrapper.UI
         private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void BtnSaveList_Click(object sender, EventArgs e)
+        {
+            if (this.SfdSave.ShowDialog() == DialogResult.OK)
+            {
+                var json = JsonConvert.SerializeObject(this.Days);
+                File.WriteAllText(this.SfdSave.FileName, json);
+            }
+        }
+
+        private void BtnLoadList_Click(object sender, EventArgs e)
+        {
+            if (this.OfdOpen.ShowDialog() == DialogResult.OK)
+            {
+                this.Days.Clear();
+                var json = File.ReadAllText(this.OfdOpen.FileName);
+                this.Days.AddRange(JsonConvert.DeserializeObject<List<Day>>(json));
+                this.ShowDays();
+                this.ClearInputs();
+            }
         }
     }
 }

@@ -24,10 +24,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="tours\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Update="tours\griechenland.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="tours\grandtour.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
