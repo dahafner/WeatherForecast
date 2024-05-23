@@ -25,10 +25,10 @@ namespace MeteoBlueWrapper.UI
 
         private void InitLists()
         {
-            if (File.Exists("tours\\grandtour.json"))
+            if (File.Exists("tours\\deutschland.json"))
             {
                 this.days.Clear();
-                var json = File.ReadAllText("tours\\grandtour.json");
+                var json = File.ReadAllText("tours\\deutschland.json");
                 this.days.AddRange(JsonConvert.DeserializeObject<List<Day>>(json));
             }            
         }
